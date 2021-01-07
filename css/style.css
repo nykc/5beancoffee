@@ -266,6 +266,23 @@ section {
     height: .5em;
 }
 
+.masonry {
+    margin-top: 4rem;
+    column-count: 2;
+    column-gap: .5em;
+}
+
+.masonry .brick {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 .25em 0;
+}
+
+.masonry .brick img {
+    width: 100%;
+}
+
+
 .footer {
     background-image: url('/images/footertile-1.jpg');
     background-repeat: repeat;
