@@ -50,6 +50,21 @@ h2 {
   font-size: 2.5rem;
 }
 
+.with-dec:before {
+  background-image: url(../images/leftdec.svg);
+  background-repeat: no-repeat;
+  padding: 0 20px;
+  margin-right: 10px;
+  content: "";
+}
+.with-dec:after {
+  background-image: url(../images/rightdec.svg);
+  background-repeat: no-repeat;
+  padding: 0 20px;
+  margin-left: 10px;
+  content: "";
+}
+
 h4 {
   font-family: "Chau Philomene One", sans-serif;
   font-size: 1.5rem;
@@ -340,25 +355,48 @@ nav .logo {
   padding: 4rem 0;
 }
 .footer h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: #c9c0b5;
+  margin: 1em 0;
 }
 .footer a,
 .footer p {
   color: #c9c0b5;
-  font-size: 1.125rem;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
   margin-bottom: 0;
+}
+.footer .hours p:nth-child(odd) {
+  margin-bottom: 0.5em;
 }
 .footer address {
   color: #c9c0b5;
   font-size: 1rem;
   font-style: inherit;
 }
-.footer .footer-logo {
-  width: 5.25em;
-  height: auto;
+.footer address .phone {
+  display: inline-block;
+  margin-top: 0.5em;
 }
-.footer .social-ul {
+.footer .footer-logo {
+  width: 7.25em;
+  height: auto;
+  margin: 0 auto;
+}
+@media (min-width: 40em) {
+  .footer .footer-logo {
+    width: 5.25em;
+  }
+}
+.footer .social {
+  margin: 2em 0;
+}
+@media (min-width: 40em) {
+  .footer .social {
+    margin: 0;
+  }
+}
+.footer .social .social-ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -366,7 +404,7 @@ nav .logo {
   padding: 0;
   margin: 0;
 }
-.footer .social-ul a {
+.footer .social .social-ul a {
   border-radius: 50%;
   border: 1px solid #fcfcfc;
   color: #c9c0b5;

@@ -4,48 +4,74 @@
     padding: 4rem 0;
 
     h3 {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         color: $clr-primary-400;
+        margin: 1em 0 ;
     }
 
     a,
     p {
         color: $clr-primary-400;
-        font-size: 1.125rem;
+        font-family: $ff-primary;
+        font-size: .875rem;
         margin-bottom: 0;
+    }
+
+    .hours {
+        p:nth-child(odd) {
+            margin-bottom: .5em;
+        }
     }
 
     address {
         color: $clr-primary-400;
         font-size: 1rem;
         font-style: inherit;
+
+        .phone {
+            display: inline-block;
+            margin-top: .5em;
+        }
     }
 
     .footer-logo {
-        width: 5.25em;
+        width: 7.25em;
         height: auto;
+        margin: 0 auto;
+
+        @include for-desktop {
+            width: 5.25em;
+        }
     }
 
-    .social-ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: left;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
+    .social {
+        margin: 2em 0;
 
-        a {
-            border-radius: 50%;
-            border: 1px solid $clr-neutral-100;
-            color: $clr-primary-400;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            margin: 5px 15px 0 0;
-            height: 35px;
-            width: 35px;
-            text-decoration: none;
+        @include for-desktop {
+            margin: 0;
+        }
+
+        .social-ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            a {
+                border-radius: 50%;
+                border: 1px solid $clr-neutral-100;
+                color: $clr-primary-400;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+                margin: 5px 15px 0 0;
+                height: 35px;
+                width: 35px;
+                text-decoration: none;
+            }
         }
     }
 }
