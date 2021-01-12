@@ -1,0 +1,48 @@
+.btn {
+    display: inline-block;
+    padding: .7em 1.7em;
+    background: $clr-accent-400;
+    color: $clr-primary-200;
+    font-family: $ff-accent;
+    font-size: 1.1rem;
+    letter-spacing: .125em;
+    text-transform: uppercase;
+
+    &:hover {
+        background: $clr-primary-600;
+        transition: 0.3s ease-in;
+    }
+}
+
+.dd-button {
+    background-image: url('../images/doordashlight.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: $clr-primary-400;
+    cursor: pointer;
+}
+
+.dd-button-inverse {
+    background-image: url('../images/doordashlight.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: $clr-primary-400;
+    cursor: pointer;
+}
+
+.dd-cta {
+    position: relative;
+    z-index: 9;
+    bottom: 75px;
+
+    h2 {
+        font-size: 41px;
+        font-weight: normal;
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+    }
+}
+
+.dd-cta-image {
+    height: 63px;
+    margin: 0 auto;
+}

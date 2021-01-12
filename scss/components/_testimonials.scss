@@ -1,0 +1,25 @@
+.card {
+    background-color: $clr-primary-200;
+    border: 1px solid $clr-primary-200;
+    border-radius: 5px;
+    padding: .7em 1.25em;
+    margin: .5em .75em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    p {
+        font-size: 1rem;
+        padding-top: .7em;
+
+        &:last-child {
+            color: $clr-accent-400;
+        }
+    }
+
+    img {
+        width: 75px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,73 @@
+.footer {
+    background-image: url(../images/footertile-1.jpg);
+    background-repeat: repeat;
+    padding: 4rem 0;
+
+    h3 {
+        font-size: 1.25rem;
+        color: $clr-primary-400;
+    }
+
+    a,
+    p {
+        color: $clr-primary-400;
+        font-size: 1.125rem;
+        margin-bottom: 0;
+    }
+
+    address {
+        color: $clr-primary-400;
+        font-size: 1rem;
+        font-style: inherit;
+    }
+
+    .footer-logo {
+        width: 5.25em;
+        height: auto;
+    }
+
+    .social-ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        a {
+            border-radius: 50%;
+            border: 1px solid $clr-neutral-100;
+            color: $clr-primary-400;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 5px 15px 0 0;
+            height: 35px;
+            width: 35px;
+            text-decoration: none;
+        }
+    }
+}
+
+footer {
+    background-color: $clr-primary-400;
+    color: $clr-neutral-600;
+    font-family: $ff-primary;
+    font-size: .75rem;
+    padding: .75rem 1rem;
+
+    .fa-heart {
+        color: $clr-accent-400;
+    }
+
+    a {
+        color: $clr-primary-400;
+        text-decoration: none;
+    }
+
+    p {
+        color: $clr-neutral-600;
+        margin-top: .5em;
+    }
+}

@@ -1,0 +1,47 @@
+header {
+    .container { 
+        margin-top: 2.25em;
+        p {
+            text-transform: uppercase;
+            font-family: $ff-accent;
+            font-size: 2rem;
+            margin: 0;
+        }
+    }
+}
+
+nav {
+    background-color: $clr-accent-400;
+    color: $clr-primary-400;
+    font-family: $ff-accent;
+    font-size: 1.15rem;
+    font-weight: normal;
+    display: flex;
+    width: 100%;
+    height: 2.25em;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+
+    @include for-desktop {
+        font-size: 1.25rem;
+        top: 40px;
+    }
+
+    a {
+        color: inherit;
+        margin: 0 .5em;
+    }
+
+    .logo {
+        display: none;
+
+        @include for-desktop {
+            display: inline;
+            height: 90px;
+        }
+    }
+}

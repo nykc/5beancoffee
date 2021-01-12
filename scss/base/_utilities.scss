@@ -1,0 +1,108 @@
+.text-center {
+    text-align: center;
+}
+
+.padding-top {
+    padding-top: 2em;
+}
+
+.external-link {
+    color: $clr-accent-400;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.wrap {
+    display: inline-block;
+    width: 10em;
+    height: .5em;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.container--narrow {
+    max-width: 34rem;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+
+    @include for-desktop {
+        flex-direction: row;
+
+        > * {
+            flex-basis: 100%;
+        }
+
+        > * + * {
+            margin-left: 2em;
+        }
+    }
+}
+
+.bg-light {
+    background-color: $clr-accent-200;
+}
+
+.bg-mid {
+    color: $clr-neutral-600;
+    background-color: $clr-accent-400;
+}
+
+.bg-accent {
+    color: $clr-accent-200;
+    background-color: $clr-primary-400;
+    background-image: url(../images/red-tile.jpg);
+    background-repeat: repeat;
+}
+
+.bg-dark {
+    color: $clr-primary-200;
+    background-color: $clr-primary-800;
+}
+
+.bg-mid h2,
+.bg-accent h2,
+.bg-dark h2 {
+    color: $clr-primary-200;
+}
+
+.bg-hero {
+    background-image: url('../images/wood-header.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 330px;
+}
+
+.bg-map {
+    background-image: url('../images/map-1.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.dd-section {
+    display: none;
+
+    @include for-desktop {
+        display: block;
+        padding: 3rem 0;
+    }
+}
+
+.dd-bg-image {
+    display: block;
+    position: relative;
+    top: 60px;
+    filter: hue-rotate(16deg) brightness(75%) opacity(24%);
+    max-width: 100%;
+    transform: rotate(-5deg);
+    opacity: .5;
+    text-align: center;
+    padding-bottom: 30px;
+}
