@@ -1,0 +1,25 @@
+.shop {
+    header {
+        .container { 
+            margin-top: 7.25em;
+            p {
+                text-transform: uppercase;
+                font-family: $ff-accent;
+                font-size: 2rem;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.shop-content {
+    p {
+        font-family: $ff-accent;
+        font-size: 1.5em;
+        margin-bottom: .5em;
+    }
+
+    h2 {
+        letter-spacing: 2px;
+    }
+}
