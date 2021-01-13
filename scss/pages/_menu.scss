@@ -1,0 +1,53 @@
+.menu--section1,
+.menu--section2 {
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.our-menu {
+    header {
+        .container { 
+            margin-top: 7.25em;
+            p {
+                text-transform: uppercase;
+                font-family: $ff-accent;
+                font-size: 2rem;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.menu {
+
+    .item-container {
+        display: flex;
+        flex-wrap: no-wrap;
+
+        .item {
+            flex: 70%;
+            margin-left: .25em;
+            h4 {
+                margin: 0;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 1;
+                font-style: oblique;
+            }
+        }
+
+        .price { 
+            width: 10%;
+            align-items: flex-end;
+            margin-right: .25em;
+
+            span {
+                display: block;
+                font-size: 1rem;
+                font-weight: bold;
+                text-align: right;
+            }
+        }
+    }
+}

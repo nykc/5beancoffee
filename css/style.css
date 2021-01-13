@@ -460,6 +460,50 @@ footer p {
   margin: 0.5em 0;
 }
 
+.menu--section1,
+.menu--section2 {
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+.our-menu header .container {
+  margin-top: 7.25em;
+}
+.our-menu header .container p {
+  text-transform: uppercase;
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.menu .item-container {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+.menu .item-container .item {
+  flex: 70%;
+  margin-left: 0.25em;
+}
+.menu .item-container .item h4 {
+  margin: 0;
+}
+.menu .item-container .item p {
+  font-size: 1rem;
+  line-height: 1;
+  font-style: oblique;
+}
+.menu .item-container .price {
+  width: 10%;
+  align-items: flex-end;
+  margin-right: 0.25em;
+}
+.menu .item-container .price span {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+}
+
 .shop header .container {
   margin-top: 7.25em;
 }
