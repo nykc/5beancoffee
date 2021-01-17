@@ -10,6 +10,7 @@
             }
         }
     }
+
 }
 
 .shop-content {
@@ -23,3 +24,36 @@
         letter-spacing: 2px;
     }
 }
+
+    .masonry {
+        margin-top: 4rem;
+        column-count: 1;
+        column-gap: .25em;
+
+        @include for-desktop {
+            column-count: 2;
+            column-gap: 0.5em;
+        }
+
+        .brick {
+            display: inline-block;
+            width: 100%;
+
+            img {
+                width: 80%;
+                margin: 0 auto;
+
+                @include for-desktop {
+                    width: 100%;
+                }
+            }
+        }
+
+        .brick:nth-child(1n+7) {
+            display: none;
+
+            @include for-desktop {
+                display: inline-block;
+            }
+        }
+    }

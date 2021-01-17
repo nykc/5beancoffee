@@ -136,7 +136,7 @@ section {
 
 .container {
   margin-inline: auto;
-  width: min(90%, 70.5rem);
+  width: min(90%, 90.5rem);
 }
 
 .container--narrow {
@@ -309,7 +309,7 @@ nav {
   position: absolute;
   top: 0px;
   left: 0px;
-  padding: 5px;
+  padding: 5px 0;
 }
 @media (min-width: 40em) {
   nav {
@@ -427,6 +427,29 @@ footer p {
   margin: 0.5em 0;
 }
 
+.card {
+  background-color: #e9e3da;
+  border: 1px solid #e9e3da;
+  border-radius: 5px;
+  padding: 0.7em 1.25em;
+  margin: 0.5em 0.75em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card p {
+  font-size: 1rem;
+  padding-top: 0.7em;
+}
+.card p:last-child {
+  color: #b73827;
+}
+.card img {
+  width: 75px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
 .menu--section1,
 .menu--section2 {
   padding-top: 3em;
@@ -488,6 +511,39 @@ footer p {
 }
 .shop-content h2 {
   letter-spacing: 2px;
+}
+
+.masonry {
+  margin-top: 4rem;
+  column-count: 1;
+  column-gap: 0.25em;
+}
+@media (min-width: 40em) {
+  .masonry {
+    column-count: 2;
+    column-gap: 0.5em;
+  }
+}
+.masonry .brick {
+  display: inline-block;
+  width: 100%;
+}
+.masonry .brick img {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (min-width: 40em) {
+  .masonry .brick img {
+    width: 100%;
+  }
+}
+.masonry .brick:nth-child(1n+7) {
+  display: none;
+}
+@media (min-width: 40em) {
+  .masonry .brick:nth-child(1n+7) {
+    display: inline-block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
