@@ -8,6 +8,20 @@ header {
             margin: 0;
         }
     }
+
+    .doordash-light {
+        background-color: $clr-accent-400;
+        height: 4em;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+
+        img {
+            height: 2em;
+            margin: 0 auto;
+            padding: .75em;
+        }
+    }
 }
 
 nav {
