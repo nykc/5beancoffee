@@ -1,0 +1,97 @@
+.contact { 
+    header {
+        p {
+            font-family: $ff-content;
+            font-size: 1.5rem;
+            text-transform: initial;
+        }
+
+        .map {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+
+            #gmap_canvas {
+                border-radius: 5px;
+                height: 300px;
+
+                @include for-desktop {
+                    height: 400px;
+                    width: 50em;
+                }
+            }
+
+        }
+    }
+
+    .store-hours {
+        h2 {
+            margin-top: 4em;
+            @include for-desktop {
+                margin-top: 150px;
+            }
+        }
+        p {
+            margin: 0;
+        }
+    }
+
+    .contact-us {
+        background-color: $clr-primary-200;
+        p {
+            margin: 0;
+        }
+    }
+
+    #contact-form {
+        margin: 40px auto;
+
+        @include for-desktop {
+            width: 40em;
+            margin: 20px auto;
+
+        }
+        .field-left {
+            width: 50%;
+            display: inline-block;
+            float: left;
+        }
+
+        .field-right {
+            width: 50%;
+            display: inline-block;
+        }
+
+        .form-title {
+            margin-bottom: 10px;
+        }
+
+        .form-field {
+            border: 1px solid $clr-primary-400;
+            background: $clr-primary-200;
+            border-radius: 4px;
+            color: $clr-primary-800;
+            box-shadow: rgba(255,255,255,0.4) 0 1px 0,
+                        inset rgba(0,0,0,0.7) 0 0 0;
+            padding: 1em;
+            margin-bottom: 20px;
+            width: 90%;
+        }
+
+        .form-message {
+            width: 95%;
+        }
+
+        .btn {
+            @include for-desktop {
+                position: relative;
+                float: right;
+            }
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

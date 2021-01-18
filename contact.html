@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="contact">
     <header class="bg-dark bg-hero text-center">
         <nav>
             <a href="index.html">Home</a>
@@ -19,14 +19,54 @@
             <a href="contact.html">Find Us</a>
         </nav>
         <div class="container container--narrow">
-            <p>Welcome To</p>
-            <h1>5 Bean Coffee</h1>
-            <a href="#" class="btn">Learn More</a>
+            <h1>Find Us</h1>
+            <p>2087 A St Rt 256 Reynoldsburg, Ohio 43068</p>
+        </div>
+        <div class="container">
+            <div class="map">
+                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=2087%20A%20St%20Rt%20256%20Reynoldsburg,%20Ohio%2043068&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
         </div>
     </header>
 <!-- end header -->
 
 <!-- begin content area -->
+<section class="store-hours">
+    <div class="container text-center">
+        <div>
+            <h2>Hours of Operation</h2>
+            <p><strong>Monday: </strong>6 a.m. - 8 p.m.</p>
+            <p><strong>Tuesday: </strong>6 a.m. - 8 p.m.</p>
+            <p><strong>Wednesday: </strong>6 a.m. - 8 p.m.</p>
+            <p><strong>Thursday: </strong>6 a.m. - 8 p.m.</p>
+            <p><strong>Friday: </strong>6 a.m. - 8 p.m.</p>
+            <p><strong>Saturday: </strong>7 a.m. - 8 p.m.</p>
+            <p><strong>Sunday: </strong>8 a.m. - 8 p.m.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-us">
+    <div class="container text-center">
+        <h2>Contact Us</h2>
+        <p>Use the contact form below for pick-up orders or comments. I gladly welcome your suggestions!</p>
+        <p>You can also email us at tracy@5beancoffee.com or give us a call at <strong>614-322-BEAN (2326)</strong></p>
+    </div>
+    <div class="container text-center">
+        <form id="contact-form">
+            <div class="field-left">
+                <input type="text" name="name" placeholder="Name" class="form-field">
+            </div>
+            <div class="field-right">
+                <input type="email" name="_replyto" placeholder="Email" class="form-field">
+            </div>
+            <textarea name="message" rows="10" placeholder="Message" class="form-field form-message"></textarea>
+            <div class="buttons-container">
+                <input type="submit" value="Send" class="btn">
+            </div>
+        </form>
+    </div>
+</section>
 <!-- end content area -->
 
     <section>

@@ -1,3 +1,33 @@
+.home header {
+
+    .quick-order {
+        display: none;
+    }
+
+    @include for-desktop {
+        .quick-order {
+            display: block;
+            position: absolute;
+            bottom: 2em;
+            right: 0;
+            animation: 1s ease-out 0s 1 slideInFromRight;
+
+            .dd-quick-order {
+                height: 50px;
+            }
+        }
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    }
+
+}
+
 header {
     .container { 
         margin-top: 2.25em;

@@ -285,6 +285,30 @@ section {
   margin: 0 auto;
 }
 
+.home header .quick-order {
+  display: none;
+}
+@media (min-width: 40em) {
+  .home header .quick-order {
+    display: block;
+    position: absolute;
+    bottom: 2em;
+    right: 0;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+  .home header .quick-order .dd-quick-order {
+    height: 50px;
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
 header .container {
   margin-top: 2.25em;
 }
@@ -555,6 +579,91 @@ footer p {
 @media (min-width: 40em) {
   .masonry .brick:nth-child(1n+7) {
     display: inline-block;
+  }
+}
+
+.contact header p {
+  font-family: "Times New Roman", serif;
+  font-size: 1.5rem;
+  text-transform: initial;
+}
+.contact header .map {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact header .map #gmap_canvas {
+  border-radius: 5px;
+  height: 300px;
+}
+@media (min-width: 40em) {
+  .contact header .map #gmap_canvas {
+    height: 400px;
+    width: 50em;
+  }
+}
+.contact .store-hours h2 {
+  margin-top: 4em;
+}
+@media (min-width: 40em) {
+  .contact .store-hours h2 {
+    margin-top: 150px;
+  }
+}
+.contact .store-hours p {
+  margin: 0;
+}
+.contact .contact-us {
+  background-color: #e9e3da;
+}
+.contact .contact-us p {
+  margin: 0;
+}
+.contact #contact-form {
+  margin: 40px auto;
+}
+@media (min-width: 40em) {
+  .contact #contact-form {
+    width: 40em;
+    margin: 20px auto;
+  }
+}
+.contact #contact-form .field-left {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+.contact #contact-form .field-right {
+  width: 50%;
+  display: inline-block;
+}
+.contact #contact-form .form-title {
+  margin-bottom: 10px;
+}
+.contact #contact-form .form-field {
+  border: 1px solid #c9c0b5;
+  background: #e9e3da;
+  border-radius: 4px;
+  color: #3f362f;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(0, 0, 0, 0.7) 0 0 0;
+  padding: 1em;
+  margin-bottom: 20px;
+  width: 90%;
+}
+.contact #contact-form .form-message {
+  width: 95%;
+}
+.contact #contact-form .btn {
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 40em) {
+  .contact #contact-form .btn {
+    position: relative;
+    float: right;
   }
 }
 
